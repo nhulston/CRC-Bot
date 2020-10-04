@@ -94,10 +94,13 @@ while True:
 
         driver.implicitly_wait(10)
         driver.find_element_by_xpath(register_xpath).click()
+        driver.implicitly_wait(10)
         WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[5]/div[1]/div[2]/div["
                                                                               "3]/div[1]/div/form/button"))).click()
+        driver.implicitly_wait(10)
         WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[5]/div[1]/div[2]/div["
                                                                               "3]/div/form/button"))).click()
+        driver.implicitly_wait(10)
         WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[5]/div[1]/div[2]/div["
                                                                               "5]/div/div/div[2]/div/div["
                                                                               "2]/button"))).click()
